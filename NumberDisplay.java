@@ -40,4 +40,17 @@ public class NumberDisplay
             display = value;
         }
     }
+    
+    /**
+     * Un método que devuelve el valor actual del display en forma de cadena de 2 caracteres
+     */
+    public String getDisplayValue()
+    {
+        String displayValue = display + "";
+        if(display<10){
+            displayValue = "0"+ display;
+        }
+        return displayValue;
+    }
+    
 }
