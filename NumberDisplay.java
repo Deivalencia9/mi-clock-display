@@ -60,4 +60,15 @@ public class NumberDisplay
     {
         return display;
     }
+    
+    /**
+     * Un método que incrementa en 1 al display y lo hace volver al principio si alcanza el límite
+     */
+    public void increment()
+    {
+        display = display+1;
+        if(display == limit){
+            display = 0;
+        }
+    }
 }
